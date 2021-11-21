@@ -30,8 +30,7 @@ class _App2ScreenState extends State<App2Screen> {
   }
 
   void changeMatrix(int index) {
-    if(colorCheck(index)!=0){
-
+    if (colorCheck(index) != 0) {
       return;
     }
     if (whatPlayer == 0) {
@@ -41,7 +40,6 @@ class _App2ScreenState extends State<App2Screen> {
     else if (whatPlayer == -1) {
       whatPlayer = 1;
     }
-
 
     if (index == 0) {
       l1[0] = whatPlayer;
@@ -73,8 +71,6 @@ class _App2ScreenState extends State<App2Screen> {
       c3[2] = whatPlayer;
     }
   }
-
-
 
   int validator() {
     int i, s1 = 0, s2 = 0, s3 = 0, s4 = 0, s5 = 0, s6 = 0;
